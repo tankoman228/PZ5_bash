@@ -1,7 +1,8 @@
-echo "Введите первое число:"
-read a
-echo "Введите второе число:"
-read b
-sum=$((a + b))
-echo "Сумма: $sum"
+echo "Введите число:"
+read num
+fact=1
+for ((i=1; i<=num; i++)); do
+ fact=$((fact * i))
+done
+echo "Факториал: $fact"
 read -n 1
