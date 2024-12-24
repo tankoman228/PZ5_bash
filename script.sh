@@ -1,7 +1,8 @@
-echo "Введите первое число:"
-read a
-echo "Введите второе число:"
-read b
-sum=$((a + b))
-echo "Сумма: $sum"
+echo "Введите число:"
+read num
+if (( num % 2 == 0 )); then
+ echo "$num - четное"
+else
+ echo "$num - нечетное"
+fi
 read -n 1
